@@ -30,7 +30,7 @@ public class Teleoperated {
      */
     public void run() {
         m_drivetrain.arcadeDrive(m_controller.getLeftY(), 
-                                 m_controller.getRightX());
+                                 m_controller.getRightTriggerAxis());
 
         double armAngle = 0;
         if(m_controller.getBButton()) {
